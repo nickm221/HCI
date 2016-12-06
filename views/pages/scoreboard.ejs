@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+            <h2><%= pageTitle %><%= username %></h2>
+			<div class="Scoreboard">
+				<h2> Record Your Bowling Score </h2>
+				<div class="row">
+              		<div class="col-md-9" ><h5>Click Number of Pins Knocked Down</h5>
+						<div class="btn-toolbar pinButtons" role="toolbar">
+							<button id="btn0" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="No pins knocked down" onclick="hS(0);" value="0" >0</button>
+							<button id="btn1" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="1 pin knocked down" onclick="hS(1);" value="1" >1</button>
+							<button id="btn2" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="2 pins knocked down" onclick="hS(2);" value="2" >2</button>
+							<button id="btn3" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="3 pins knocked down" onclick="hS(3);" value="3" >3</button>
+							<button id="btn4" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="4 pins knocked down" onclick="hS(4);" value="4" >4</button>
+							<button id="btn5" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="5 pins knocked down" onclick="hS(5);" value="5" >5</button>
+							<button id="btn6" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="6 pins knocked down" onclick="hS(6);" value="6" >6</button>
+							<button id="btn7" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="7 pins knocked down" onclick="hS(7);" value="7" >7</button>
+							<button id="btn8" type="button" class="btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="8 pins knocked down" onclick="hS(8);" value="8" >8</button>
+							<button id="btn9" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="9 pins knocked down" onclick="hS(9);" value="9" >9</button>
+							<button id="btn10" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="10 pins knocked down" onclick="hS(10);" value="10" >10</button>
+						</div>
+					</div>
+              		<div class="col-md-3 gamehidden"> </div> <!-- dummy three col group to close out a 12 col row -->
+          		</div>  <!-- end the row of the buttons for pins knocked down -->
+				<div class="row scoreboard">
+
+
+					<!-- SCOREBOARD GOES HERE -->
+
+
+
+
+				</div>
+			</div>			
+        </main>
+		<form method="POST" action="logout"><input type="submit" id="update" value="Log Out" /></form>
+    </div>
+
+    <% include ../partials/scripts %>
+</body>
+
+</html>
